@@ -1,9 +1,9 @@
 question = [
-    "What are the different types of mathematics found in quantitative ﬁnance?",
+    "What are the different types of mathematics found in quantitative finance?",
     "What is arbitrage?",
-    "What is put–call parity?",
-    "What is the Central Limit Theorem and what are its Implications for ﬁnance?",
-    "How is risk deﬁned in mathematical terms?",
+    "What is put-call parity?",
+    "What is the Central Limit Theorem and what are its Implications for finance?",
+    "How is risk defined in mathematical terms?",
     "What is value at risk and how is it used?",
     "What is Extreme Value Theory?",
     "What is CrashMetrics?",
@@ -16,25 +16,25 @@ question = [
     "What is the Kelly criterion?",
     "Why hedge?",
     "What is marking to market and how does it affect risk management in derivatives trading?",
-    "What is the Efﬁcient Markets Hypothesis?",
+    "What is the Efficient Markets Hypothesis?",
     "What are the most useful performance measures?",
     "What is a utility function and how is it used?",
     "What is the difference between a quant and an actuary?",
-    "What is a Wiener process/Brownian motion and what are its uses in ﬁnance?",
-    "What is Jensen’s Inequality and what is its role in ﬁnance?",
-    "What is It ˆo’s lemma?",
+    "What is a Wiener process/Brownian motion and what are its uses in finance?",
+    "What is Jensen's Inequality and what is its role in finance?",
+    "What is Ito's lemma?",
     "Why does risk-neutral valuation work?",
-    "What is Girsanov’s theorem, and why is it important in ﬁnance?",
+    "What is Girsanov's theorem, and why is it important in finance?",
     "What are the greeks?",
     "Why do quants like closed-form solutions?",
     "What are the forward and backward equations?",
-    "What is the Black–Scholes equation?",
+    "What is the Black-Scholes equation?",
     "Which numerical method should I use and when?",
     "What is Monte Carlo simulation?",
-    "What is the ﬁnite-difference method?",
-    "What is a Poisson process and what are its uses in ﬁnance?",
+    "What is the finite-difference method?",
+    "What is a Poisson process and what are its uses in finance?",
     "What is a jump-diffusion model and how does it affect option values?",
-    "What is meant by ‘complete’ and ‘incomplete’ markets?",
+    "What is meant by 'complete' and 'incomplete' markets?",
     "Can I use real probabilities to price derivatives?",
     "What is volatility?",
     "What is the volatility smile?",
@@ -43,23 +43,23 @@ question = [
     "What is serial autocorrelation and does it have a role in derivatives?",
     "What is dispersion trading?",
     "What is bootstrapping using discount factors?",
-    "What is the LIBOR market model and its principal applications in ﬁnance?",
-    "What is meant by the ‘value’ of a contract?",
+    "What is the LIBOR market model and its principal applications in finance?",
+    "What is meant by the 'value' of a contract?",
     "What is calibration?",
     "What is Option Adjusted Spread?",
     "What is the market price of risk?",
     "Can I reverse engineer a partial differential equation to get at the model and contract?",
     "What is the difference between the equilibrium approach and the no-arbitrage approach to modelling?",
-    "How good is the assumption of normal distributions for ﬁnancial returns?",
-    "How robust is the Black–Scholes model?",
+    "How good is the assumption of normal distributions for financial returns?",
+    "How robust is the Black-Scholes model?",
     "Why is the lognormal distribution important?",
-    "What are copulas and how are they used in quantitative ﬁnance?",
-    "What is asymptotic analysis and how is it used in ﬁnancial modelling?",
+    "What are copulas and how are they used in quantitative finance?",
+    "What is asymptotic analysis and how is it used in financial modelling?",
     "What is a free-boundary problem and what is the optimal-stopping time for an American option?",
     "What are low-discrepancy numbers?",
     "What are the bastard greeks?",
     "What are the stupidest things people have said about risk neutrality?",
-    "What is the best-kept secret in quantitative ﬁnance?"
+    "What is the best-kept secret in quantitative finance?"
 ]
 
 answers = [
@@ -84,8 +84,8 @@ answers = [
  probability.
  The assumption that there are no arbitrage opportunities in
  the market is fundamental to classical finance theory. This
- idea is popularly known as ‘there’s no such thing as a free
- lunch.’
+ idea is popularly known as 'there's no such thing as a free
+ lunch.'
  Example
  An at-the-money European call option with a strike of $100
  and an expiration of six months is worth $8. A European put
@@ -93,25 +93,25 @@ answers = [
  no dividends on the stock and a six-month zero-coupon bond
  with a principal of $100 is worth $97.
  Buy the call and a bond, sell the put and the stock, which will
- bring in $−8−97+6+100=$1. At expiration this portfolio
+ bring in $-8-97+6+100=$1. At expiration this portfolio
  will be worthless regardless of the final price of the stock.
  You will make a profit of $1 with no risk. This is arbitrage. It
  is an example of the violation of put call parity.
     """,
     """
      Short answer
- Put–call parity is a relationship between the prices of a
+ Put-call parity is a relationship between the prices of a
  European-style call option and a European-style put option,
  as long as they have the same strike and expiration:
- Call price − Put price = Stock price
- −Strike price (present valued from expiration).
+ Call price - Put price = Stock price
+ -Strike price (present valued from expiration).
  Example Stock price is $98, a European call option struck at
  $100 with an expiration of nine months has a value of $9.07.
  The nine-month, continuously compounded, interest rate is
  4.5%. What is the value of the put option with the same strike
  and expiration?
  By rearranging the above expression we find
- Put price = 9.07−98+100 e−0.045×0.75 = 7.75.
+ Put price = 9.07-98+100 e-0.045x0.75 = 7.75.
  The put must therefore be worth $7.75.
     """,
     """
@@ -122,13 +122,13 @@ vidual numbers are not normally distributed.
  Example
  Play a dice game where you win $10 if you throw a six, but
  lose $1 if you throw anything else. The distribution of your
- profit after one coin toss is clearly not normal, it’s bimodal
+ profit after one coin toss is clearly not normal, it's bimodal
  and skewed, but if you play the game thousands of times
  your total profit will be approximately normal
     """,
     """
     Short answer
- In layman’s terms, risk is the possibility of harm or loss. In
+ In layman's terms, risk is the possibility of harm or loss. In
  finance it refers to the possibility of a monetary loss associated with investments.
  Example
  The most common measure of risk is simply standard devia
@@ -156,13 +156,13 @@ ness in a portfolio, and this is seen as a bad thing.
  with the Central Limit Theorem, but instead of being about
  averages they are about extremes. Of course, whether one
  should even be talking about probabilities when talking about
- crashes is another matter. It’s probably safer to look at
+ crashes is another matter. It's probably safer to look at
  worst-case scenarios.
  Example
  (Taken from McNeil, 1998.) Fit a Frechet distribution to the
  28 annual maxima of the SP500 index returns from 1960 to
- October 16th 1987, the business day before the ’87 crash. In
- this dataset the largest fall was ‘just’ 6.7%. Now calculate the
+ October 16th 1987, the business day before the '87 crash. In
+ this dataset the largest fall was 'just' 6.7%. Now calculate the
  probability of various returns. For example, a 50-year return
  level is the level which on average should only be exceeded
  in one year every 50 years. The Frechet distribution gives the
@@ -203,8 +203,8 @@ ally, at the 95% confidence level the one-day traditional VaR
  there is a 92% chance of not losing anything, 100% less two
  lots of 4%. So at the 95% confidence level there will be a sig
 nificant VaR. Putting the two portfolios together has in this
- example increased the risk. ‘A merger does not create extra
- risk’ (Artzner et al. 1997).
+ example increased the risk. 'A merger does not create extra
+ risk' (Artzner et al. 1997).
     """,
     """
      Short answer
@@ -264,12 +264,12 @@ nificant VaR. Putting the two portfolios together has in this
  of the final outcome actually happening.
  Example
  You have three hats containing normally distributed random
- numbers. One hat’s numbers have a mean of zero and a standard deviation of 0.1. This is hat A. Another hat’s numbers
+ numbers. One hat's numbers have a mean of zero and a standard deviation of 0.1. This is hat A. Another hat's numbers
  have a mean of zero and a standard deviation of 1. This is
- hat B. The final hat’s numbers have a mean of zero and a
- standard deviation of 10. This is hat C. You don’t know which
+ hat B. The final hat's numbers have a mean of zero and a
+ standard deviation of 10. This is hat C. You don't know which
  hat is which.
- You pick a number out of one hat. It is −2.6. Which hat do
+ You pick a number out of one hat. It is -2.6. Which hat do
  you think it came from? MLE can help you answer this question.
     """,
     """
@@ -283,8 +283,8 @@ tivariate time series, and provides a sound methodology for
  system.
  Example
  Suppose you have two stocks S1 and S2 andyoufindthat
- S1 −3 S2 is stationary, so that this combination never strays
- too far from its mean. If one day this ‘spread’ is particularly
+ S1 -3 S2 is stationary, so that this combination never strays
+ too far from its mean. If one day this 'spread' is particularly
  large then you would have sound statistical reasons for think
 ing the spread might shortly reduce, giving you a possible
  source of statistical arbitrage profit. This can be the basis for
@@ -305,14 +305,14 @@ ing the spread might shortly reduce, giving you a possible
     """,
 """
  Short answer
- ‘Hedging’ in its broadest sense means the reduction of
+ 'Hedging' in its broadest sense means the reduction of
  risk by exploiting relationships or correlation (or lack of
  correlation) between various risky investments. The purpose
  behind hedging is that it can lead to an improved risk/return.
  In the classical Modern Portfolio Theory framework, for
  example, it is usually possible to construct many portfolios
  having the same expected return but with different variance
- of returns (‘risk’). Clearly, if you have two portfolios with
+ of returns ('risk'). Clearly, if you have two portfolios with
  the same expected return the one with the lower risk is the
  better investment.
  Example
@@ -339,7 +339,7 @@ rect.
  Example
  A stock is trading at $47, but you think it is seriously under
 valued. You believe that the value should be $60. You buy
- the stock. How much do you tell people your little ‘portfolio’
+ the stock. How much do you tell people your little 'portfolio'
  is worth? $47 or $60? If you say $47 then you are marking to
  market, if you say $60 you are marking to (your) model. Obvi
 ously this is open to serious abuse and so it is usual, and
@@ -353,8 +353,8 @@ ously this is open to serious abuse and so it is usual, and
  market because all information about securities is already
  reflected in their prices.
  Example
- Or rather a counter-example, ‘‘I’d be a bum in the street with
- a tin cup if the markets were efficient,’’ Warren Buffett.
+ Or rather a counter-example, ''I'd be a bum in the street with
+ a tin cup if the markets were efficient,'' Warren Buffett.
     """,
     """
      Short answer
@@ -363,20 +363,20 @@ ously this is open to serious abuse and so it is usual, and
  popular is the Sharpe ratio.
  Example
  One stock has an average growth of 10% per annum, another
- is 30% per annum. You’d rather invest in the second, right?
+ is 30% per annum. You'd rather invest in the second, right?
  What if I said that the first had a volatility of only 5%,
  whereas the second was 20%, does that make a difference?
     """,
     """
      Short answer
- A utility function represents the ‘worth,’ ‘happiness’ or ‘satis
-faction’ associated with goods, services, events, outcomes,
+ A utility function represents the 'worth,' 'happiness' or 'satis
+faction' associated with goods, services, events, outcomes,
  levels of wealth, etc. It can be used to rank outcomes, to
- aggregate ‘happiness’ across individuals and to value games
+ aggregate 'happiness' across individuals and to value games
  of chance.
  Example
  You own a valuable work of art; you are going to put it up
- for auction. You don’t know how much you will make but
+ for auction. You don't know how much you will make but
  the auctioneer has estimated the chances of achieving cer
 tain amounts. Someone then offers you a guaranteed amount
  provided you withdraw the painting from the auction. Should
@@ -385,7 +385,7 @@ tain amounts. Someone then offers you a guaranteed amount
     """,
     """
      Short answer
- The answer is ‘Lots.’ They can both learn a lot from each
+ The answer is 'Lots.' They can both learn a lot from each
  other.
  Example
  Actuaries work more than quants with historical data and
@@ -408,7 +408,7 @@ ments and which also has continuous sample paths. It is the
     """,
     """
     Short answer
- Jensen’s Inequality states1 that if f(·) is a convex function
+ Jensen's Inequality states1 that if f(*) is a convex function
  and x is a random variable then
  E[f(x)] ≥ f (E[x]).
  This justifies why non-linear instruments, options, have inher
@@ -421,8 +421,8 @@ tion. So E[f(x)] is 1 +4+9+16+25+36 = 91 divided by 6,
     """,
     """
      Short answer
- Itˆ
- o’s lemma is a theorem in stochastic calculus. It tells you
+ Ito
+ o's lemma is a theorem in stochastic calculus. It tells you
  that if you have a random walk, in y, say, and a function of
  that randomly walking variable, call it f(y,t), then you can
  easily write an expression for the random walk in f. A func
@@ -434,7 +434,7 @@ tion of a random variable is itself random in general.
  What is the stochastic differential equation for the logarithm
  of S, lnS?
  The answer is
- d(lnS) = µ− 1
+ d(lnS) = µ- 1
  2σ2 dt+σ dX.
     """,
     """
@@ -446,9 +446,9 @@ tion of a random variable is itself random in general.
  Option value = Expected present value of payoff
  (under a risk-neutral random walk).
  Therefore the real rate at which the underlying grows on
- average doesn’t affect the value. Of course, the volatility,
- related to the standard deviation of the underlying’s return,
- does matter. In practice, it’s usually much, much harder to
+ average doesn't affect the value. Of course, the volatility,
+ related to the standard deviation of the underlying's return,
+ does matter. In practice, it's usually much, much harder to
  estimate this average growth than the volatility, so we are
  rather spoiled in derivatives, that we only need to estimate
  the relatively stable parameter, volatility.2 The reason that
@@ -467,24 +467,24 @@ ing we remove any exposure to the direction of the stock,
  A stock whose value is currently $44.75 is growing on aver
 age by 15% per annum. Its volatility is 22%. The interest rate
  is 4%. You want to value a call option with a strike of $45,
- expiring in two months’ time. What can you do?
+ expiring in two months' time. What can you do?
  First of all, the 15% average growth is totally irrelevant. The
- stock’s growth and therefore its real direction does not affect
+ stock's growth and therefore its real direction does not affect
  the value of derivatives. What you can do is simulate many,
  many future paths of a stock with an average growth of 4%
  per annum, since that is the risk-free interest rate, and a 22%
- volatility, to find out where it may be in two months’ time.
+ volatility, to find out where it may be in two months' time.
  Then calculate the call payoff for each of these paths. Present
  value each of these back to today, and calculate the aver
-age over all paths. That’s your option value. (For this simple
+age over all paths. That's your option value. (For this simple
  example of the call option there is a formula for its value,
- so you don’t need to do all these simulations. And in that
- formula you’ll see an r for the risk-free interest rate, and no
+ so you don't need to do all these simulations. And in that
+ formula you'll see an r for the risk-free interest rate, and no
  mention of the real drift rate.)
     """,
     """
      Short answer
- Girsanov’s theorem is the formal concept underlying the
+ Girsanov's theorem is the formal concept underlying the
  change of measure from the real world to the risk-neutral
  world. We can change from a Brownian motion with one drift
  to a Brownian motion with another.
@@ -498,7 +498,7 @@ age over all paths. That’s your option value. (For this simple
     """,
     """
      Short answer
- The ‘greeks’ are the sensitivities of derivatives prices
+ The 'greeks' are the sensitivities of derivatives prices
  to underlyings, variables and parameters. They can be
  calculated by differentiating option values with respect to
  variables and/or parameters, either analytically, if you have a
@@ -514,14 +514,14 @@ age over all paths. That’s your option value. (For this simple
  the delta to the stock price. These two examples are called
  greek because they are members of the Greek alphabet. Some
  sensitivities, such as vega = ∂V
- ∂σ , are still called ‘greek’ even
- though they aren’t in the Greek alphabet.
+ ∂σ , are still called 'greek' even
+ though they aren't in the Greek alphabet.
     """,
     """
      Short answer
  Because they are fast to compute and easy to understand.
  Example
- The Black–Scholes formulæ are simple and closed form and
+ The Black-Scholes formulæ are simple and closed form and
  often used despite people knowing that they have limitations,
  and despite being used for products for which they were not
  originally intended.
@@ -542,7 +542,7 @@ age over all paths. That’s your option value. (For this simple
 """,
     """
     Short answer
- The Black–Scholes equation is a differential equation for the
+ The Black-Scholes equation is a differential equation for the
  value of an option as a function of the underlying asset and
  time.
  Example
@@ -552,18 +552,18 @@ age over all paths. That’s your option value. (For this simple
  2σ2S2∂2V
  ∂S2 
 +rS∂V
- ∂S −rV =0,
+ ∂S -rV =0,
  where V(S,t) is the option value as a function of asset price
  S and time t.
  There have been many extensions to this model, some people
- call them ‘improvements.’ But these extensions are all trivial
+ call them 'improvements.' But these extensions are all trivial
  compared with the breakthrough in modelling that was the
  original equation.
     """,
     """
     Short answer
  The three main numerical methods in common use are Monte
- Carlo, finite difference and numerical quadrature. (I’m includ
+ Carlo, finite difference and numerical quadrature. (I'm includ
 ing the binomial method as just a simplistic version of finite
  differences.) Monte Carlo is great for complex path depen
 dency and high dimensionality, and for problems which can
@@ -579,7 +579,7 @@ ential equation formulation. Numerical quadrature is for when
  Monte Carlo simulation.
  You want to price an option which is paid for in instalments,
  and you can stop paying and lose the option at any time if
- you think it’s not worth keeping up the payments. This may
+ you think it's not worth keeping up the payments. This may
  be one for finite-difference methods since it has a decision
  feature.
  You want to price a European, non-path-dependent contract
@@ -589,7 +589,7 @@ gral and so you would use a quadrature method.
     """
      Short answer
  Monte Carlo simulations are a way of solving probabilistic
- problems by numerically ‘imagining’ many possible scenar
+ problems by numerically 'imagining' many possible scenar
 ios or games so as to calculate statistical properties such as
  expectations, variances or probabilities of certain outcomes.
  In finance we use such simulations to represent the future
@@ -627,8 +627,8 @@ lem has a small number of dimensions, that is, independent
     Short answer
  The Poisson process is a model for a discontinuous random
  variable. Time is continuous, but the variable is discrete. The
- variable can represent a ‘jump’ in a quantity or the occur
-rence of an ‘event.’
+ variable can represent a 'jump' in a quantity or the occur
+rence of an 'event.'
  Example
  The Poisson process is used to model radioactive decay. In
  f
@@ -638,7 +638,7 @@ rence of an ‘event.’
     """
      Short answer
  Jump-diffusion models combine the continuous Brownian
- motion seen in Black–Scholes models (the diffusion) with
+ motion seen in Black-Scholes models (the diffusion) with
  prices that are allowed to jump discontinuously. The tim
 ing of the jump is usually random, and this is represented
  by a Poisson process. The size of the jump can also be ran
@@ -662,25 +662,25 @@ continuously. The size of this jump is decided by a random
 ically rebalancing a portfolio of the simpler instruments,
  according to some formula or algorithm, to replicate the
  more complicated product, the derivative. Obviously, an
- incomplete market is one in which you can’t replicate the
+ incomplete market is one in which you can't replicate the
  option with simpler instruments.
  Example
  The classic example is replicating an equity option, a call,
  say, by continuously buying or selling the equity so that you
  always hold the amount
- =e−D(T−t)N(d1),
+ =e-D(T-t)N(d1),
  in the stock, where
  N(x) = 1
  √
  2π
  and
  x
- −∞
- e−1
+ -∞
+ e-1
  2φ2dφ
- d1 = ln(S/E)+(r −D+ 1
- 2σ2)(T −t)
- σ√T −t
+ d1 = ln(S/E)+(r -D+ 1
+ 2σ2)(T -t)
+ σ√T -t
     """,
     """
      Short answer
@@ -700,9 +700,9 @@ ing derivatives that cannot be dynamically hedged.
  different views on what volatility will be in the future, things
  are not that simple.
  Example
- Actual volatility is the σ that goes into the Black–Scholes
+ Actual volatility is the σ that goes into the Black-Scholes
  partial differential equation. Implied volatility is the number
- in the Black–Scholes formula that makes a theoretical price
+ in the Black-Scholes formula that makes a theoretical price
  match a market price.
     """,
     """
@@ -726,8 +726,8 @@ ing derivatives that cannot be dynamically hedged.
  The simplest member of the GARCH family is GARCH(1,1) in
  which the variance, vn, of stock returns at time step n is mod
 elled by
- vn = (1−α−β)w0+βvn−1 +αvn−1B2
- n−1,
+ vn = (1-α-β)w0+βvn-1 +αvn-1B2
+ n-1,
  where w0 is the long-term variance, α and β are positive
  parameters, with α +β<1, and Bn are independent Brownian
  motions, that is, random numbers drawn from a normal
@@ -741,7 +741,7 @@ elled by
  buying or selling of the underlying asset according to some
  formula or algorithm so that risk is eliminated from an option
  position. The key point in this is what formula do you use,
- and, given that in practice you can’t hedge continuously, how
+ and, given that in practice you can't hedge continuously, how
  should you hedge discretely? First, get your delta correct,
  and this means use the correct formula and estimates for
  parameters, such as volatility. Second, decide when to hedge
@@ -761,9 +761,9 @@ elled by
  a time series and itself, meaning that a move in, say, a stock
  price one day is not independent of the stock move on a
  previous day. Usually in quantitative finance we assume that
- there is no such memory, that’s what Markov means. We can
+ there is no such memory, that's what Markov means. We can
  measure, and model, such serial autocorrelation with differ
-ent ‘lags.’ We can look at the SAC with a one-day lag, this
+ent 'lags.' We can look at the SAC with a one-day lag, this
  would be the correlation between moves one day and the day
  before, or with a two-day lag, that would be the correlation
  between moves and moves two days previously, etc.
@@ -789,7 +789,7 @@ ent ‘lags.’ We can look at the SAC with a one-day lag, this
  Example
  You have bought straddles on constituents of the SP500
  index, and you have sold a straddle on the index itself. On
- most days you don’t make much of a profit or loss on this
+ most days you don't make much of a profit or loss on this
  position, gains/losses on the equities balance losses/gains on
  the index. But one day half of your equities rise dramatically,
  and one half fall, with there being little resulting move in the
@@ -847,12 +847,12 @@ ble, the market prices at an instant in time. In a sense it is
  you match prices exactly then you are eliminating arbitrage
  opportunities, and this is why it is popular.
  Example
- You have your favourite interest rate model, but you don’t
+ You have your favourite interest rate model, but you don't
  know how to decide what the parameters in the model
  should be. You realize that the bonds, swaps and swaptions
  markets are very liquid, and presumably very efficient. So
  you choose your parameters in the model so that your
- model’s theoretical output for these simple instruments is
+ model's theoretical output for these simple instruments is
  the same as their market prices.
     """,
     """
@@ -883,10 +883,10 @@ ble, the market prices at an instant in time. In a sense it is
  terms in a financial partial differential equation represent, all
  those ∂ this
  ∂ that terms and their coefficients. And the final condi
-tion for the PDE defines the contract’s payoff.
+tion for the PDE defines the contract's payoff.
  Example
- In a typical equation you will see a V, representing ‘value.’
- What is the coefficient in front of it? If it’s r + p where r is a
+ In a typical equation you will see a V, representing 'value.'
+ What is the coefficient in front of it? If it's r + p where r is a
  risk-free interest rate then the p probably represents a risk of
  default, so you are dealing with some contract that has the
  possibility of default
@@ -908,19 +908,19 @@ nities
     """,
     """
      Short answer
- The answer has to be ‘it depends.’ It depends on the
+ The answer has to be 'it depends.' It depends on the
  timescale over which returns are measured. For stocks
  over very short timescales, intraday to several days, the
  distributions are not normal, they have fatter tails and higher
  peaks than normal. Over longer periods they start to look
  more normal, but then over years or decades they look
  lognormal.
- It also depends on what is meant by ‘good.’ They are very
+ It also depends on what is meant by 'good.' They are very
  good in the sense that they are simple distributions to work
  with, and also, thanks to the Central Limit Theorem,sensible
  distributions to work with since there are sound reasons why
  they might appear. They are also good in that basic stochas
-tic calculus and Itˆo’s lemma assume normal distributions and
+tic calculus and Ito's lemma assume normal distributions and
  those concepts are bricks and mortar to the quant.
  Example
  In Figure 2.14 is the probability density function for the daily
@@ -937,20 +937,20 @@ mal distributions, we must first estimate the daily standard
  deviation for SPX returns. Over that period it was 0.0106,
  equivalent to an average volatility of 16.9%. What is the prob
 ability of a 20% or more fall when the standard deviation is
- 0.0106? This is a staggeringly small 1.8 · 10−79. That is just
- once every 2·1076 years. Empirical answer: Once every 20
- years. Theoretical answer: Once every 2 · 1076 years. That’s
+ 0.0106? This is a staggeringly small 1.8 * 10-79. That is just
+ once every 2*1076 years. Empirical answer: Once every 20
+ years. Theoretical answer: Once every 2 * 1076 years. That's
  how bad the normal-distribution assumption is in the tails.
     """,
     """
      Short answer
  Very robust. You can drop quite a few of the assumptions
- underpinning Black–Scholes and it won’t fall over.
+ underpinning Black-Scholes and it won't fall over.
  Example
  Transaction costs? Simply adjust volatility. Time-dependent
  volatility? Use root-mean-square-average volatility instead.
- Interest rate derivatives? Black ’76 explains how to use the
- Black–Scholes formulæ in situations where it wasn’t originally
+ Interest rate derivatives? Black '76 explains how to use the
+ Black-Scholes formulæ in situations where it wasn't originally
  intended.
     """,
     """
@@ -969,7 +969,7 @@ sent stocks,
     """
     Short answer
  Copulas are used to model joint distribution of multiple
- underlyings. They permit a rich ‘correlation’ structure
+ underlyings. They permit a rich 'correlation' structure
  between underlyings. They are used for pricing, for risk
  management, for pairs trading, etc., and are especially
  popular in credit derivatives.
@@ -988,8 +988,8 @@ sent stocks,
  nicer if you approximate it. Or a partial differential equation
  that can be solved if you can throw away some of the less
  important terms. Sometimes these are called approximate
- solutions. But the word ‘approximate’ does not carry the
- same technical requirements as ‘asymptotic.’
+ solutions. But the word 'approximate' does not carry the
+ same technical requirements as 'asymptotic.'
  Example
  The SABR model is a famous model for a forward rate and
  its volatility that exploits low volatility of volatility in order
@@ -1005,7 +1005,7 @@ out that parameter being small we would have to solve the
  as part of the solution. When to exercise an American option
  is an example of a free-boundary problem, the boundary rep
 resenting the time and place at which to exercise. This is also
- called an optimal-stopping problem, the ‘stopping’ here refer
+ called an optimal-stopping problem, the 'stopping' here refer
 ring to exercise.
  Example
  Allow a box of ice cubes to melt. As they do there will appear
@@ -1022,7 +1022,7 @@ ring to exercise.
  yet are deterministic. They are used for numerically esti
 mating integrals, often in high dimensions. The best-known
  sequences are due to Faure, Halton, Hammersley, Niederreiter
- and Sobol’.
+ and Sobol'.
  Example
  You have an option that pays off the maximum of 20
  exchange rates on a specified date. You know all the
@@ -1037,7 +1037,7 @@ mating integrals, often in high dimensions. The best-known
      Short answer
  The greeks are sensitivities of values, such as option prices,
  to other financial quantities, such as price. Bastard means
- ‘illegitimate,’ here in the sense that sometimes such a con
+ 'illegitimate,' here in the sense that sometimes such a con
 cept is not mathematically justified and can give misleading
  information.
  Example
@@ -1045,7 +1045,7 @@ cept is not mathematically justified and can give misleading
 ity, σ, of 20% but are then worried whether that volatility is
  correct. You might measure ∂V
  ∂σ so that you know how sen
-sitive the option’s value is to volatility and whether or not
+sitive the option's value is to volatility and whether or not
  it matters that you have used 20%. Because you are assum
 ing volatility to be constant and then are effectively varying
  that constant you are measuring a strange sort of hybrid sen
@@ -1060,13 +1060,13 @@ sitivity which is not the true sensitivity. This could be very
 ations where it is not valid.
  Example
  Naming no names, I have seen the following written in
- research papers: ‘Using risk-neutral pricing we replace µ with
- the risk-free rate r.’ Naughty! As explained below you can
+ research papers: 'Using risk-neutral pricing we replace µ with
+ the risk-free rate r.' Naughty! As explained below you can
  only do this under certain very restrictive assumptions.
     """,
     """
     Short answer
- That inventors/discoverers/creators of models usually don’t
+ That inventors/discoverers/creators of models usually don't
  use them. They often use simpler models instead.
     """
 ]
